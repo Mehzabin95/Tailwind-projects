@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAFCART</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="py-4 shadow-md bg-white">
+      <div class="container flex justify-between items-center">
+        <!-- logo -->
+        <a href="index.html">
+          <img src="Image/logo.svg" class="w-32" alt="" />
+        </a>
+        <!-- searchbar -->
+        <div class="flex w-full max-w-xl relative">
+          <span class="absolute left-4 top-3 text-lg text-gray-500">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full border border-monu border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            placeholder="search"
+          />
+          <button
+            class="bg-monu border border-monu text-white px-4 py-3 rounded-r-md hover:bg-white hover:text-monu"
+          >
+            Search
+          </button>
+        </div>
+        <!-- icon -->
+        <div class="flex items-center space-x-4">
+          <a
+            href="wishlist.html"
+            class="text-center text-gray-700 hover:text-monu transition relative"
+          >
+            <div class="text-2xl">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center bg-monu text-white text-xs"
+            >
+              8
+            </span>
+          </a>
+          <a
+            href="#"
+            class="text-center text-gray-700 hover:text-monu transition relative"
+          >
+            <div class="text-2xl">
+              <i class="far fa-shopping-bag"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center bg-monu text-white text-xs"
+            >
+              5
+            </span>
+          </a>
+          <a
+            href="accounts.html"
+            class="text-center text-gray-700 hover:text-monu transition"
+          >
+            <div class="text-2xl">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!--nav-->
+    <nav class="w-full h-14 shadow-sm  bg-blue-950">
+      <div class="container  flex justify-between items-center">
+        <!-- All Categories -->
+        <div class="flex justify-start items-center">
+    
+          <div class="flex items-center justify-between mb-4">
+            <select class="w-44 text-sm text-gray-600 px-4 py-3 text-center font-medium shadow-md rounded focus:ring-monu focus:border-monu mt-1">
+              <option>Categories</option>
+              <option>Bedroom</option>
+              <option>Living</option>
+              <option>Dinning</option>
+              <option>Outdoor</option>
+              <option>Office</option>
+            </select>
+          </div> 
+  
+           <a href="index.html" class="px-2 text-white hover:text-monu">Home</a>  
+           <a href="shop.html" class="px-2 text-white hover:text-monu">Shop</a> 
+           <a href="about.html" class="px-2 text-white hover:text-monu">About Us</a> 
+           <a href="contact.html" class="px-2 text-white hover:text-monu">Contact Us</a> 
+        </div>
+       
+           <a href="login.html" class="px-2 text-white hover:text-monu">Login/Register</a>       
+        
+      </div>
+    </nav>
+    <!-- nav ends -->
+    <!-- Breadcrum starts -->
+    <div class="container py-4 flex items-center gap-3">
+      <a href="index.html" class="text-monu text-base">
+        <i class="fas fa-home"></i>
+      </a>
+      <span class="text-sm text-gray-400">
+        <i class="fas fa-chevron-right"></i>
+      </span>
+      <p class="text-gray-600 font-medium"> My Account </p>
+    </div>
+    <!-- Breadcrum ends -->
+    <!-- Account wrapper -->
+    <div class="container grid grid-cols-12 items-start gap-6 pt-4 pb-16">
+      <!-- sidebar -->
+      <div class="col-span-3">
+        <!-- account profile -->
+        <div class="flex px-4 py-3 shadow items-center gap-4">
+          <div class="flex-shrink-0">
+            <img src="Image/avatar.png" class="rounded-full w-14 h-14 border border-gray-300 p-1 object-cover">
+          </div>
+          <div class="flex-grow">
+            <p class="text-gray-600">Hello</p>
+            <div class="text-gray-800 ont-medium">
+              Russel Bing
+            </div>
+          </div>
+        </div>
+        <!-- account profile ends-->
+        <!-- profile links -->
+        <div class="mt-6 bg-white p-4 shadow rounded divide-y divide-gray-200 space-y-4 text-gray-600">
+          <!-- singel link -->
+          <div class="space-y-1 pl-8">
+            <a href="#" class="relative text-monu block font-semibold">
+              <span class="absolute -left-8 top-0 text-base">
+                <i class="far fa-address-card"></i>
+              </span>
+              Manage Account
+            </a>
+            <a href="profile.html" class=" text-gray-600 block hover:text-monu transition ">
+              Profile Information
+            </a>
+            <a href="#" class=" text-gray-600 block  hover:text-monu transition ">
+              Manage Address
+            </a>
+            <a href="#" class=" text-gray-600 block  hover:text-monu transition">
+              Change Password
+            </a>
+          </div>
+          <!-- singel link ends-->
+          <!-- singel link -->
+          <div class="space-y-1 pl-8 pt-4">
+            <a href="#" class="relative block font-semibold  hover:text-monu transition">
+              <span class="absolute -left-8 top-0 text-base">
+                <i class="far fa-shopping-bag"></i>
+              </span>
+              My Order History
+            </a>
+            <a href="#" class=" text-gray-600 block  hover:text-monu transition">
+              My Returns
+            </a>
+            <a href="#" class=" text-gray-600 block  hover:text-monu transition">
+              My Cancellations
+            </a>
+            <a href="#" class=" text-gray-600 block  hover:text-monu transition">
+              My Reviews
+            </a>
+          </div>
+          <!-- singel link ends-->
+          <!-- singel link -->
+          <div class="space-y-1 pl-8 pt-4">
+            <a href="#" class="relative block font-semibold  hover:text-monu transition">
+              <span class="absolute -left-8 top-0 text-base">
+                <i class="far fa-card"></i>
+              </span>
+              Payment Method
+            </a>
+            <a href="#" class=" text-gray-600 block  hover:text-monu transition">
+              Voucher
+            </a>
+          </div>
+          <!-- singel link ends-->
+          <!-- singel link -->
+          <div class="space-y-1 pl-8 pt-4">
+            <a href="wishlist.html" class="relative block font-semibold  hover:text-monu transition">
+              <span class="absolute -left-8 top-0 text-base">
+                <i class="far fa-heart"></i>
+              </span>
+              My Wishlist
+            </a>
+          </div>
+          <!-- singel link ends-->
+          <!-- singel link -->
+          <div class="space-y-1 pl-8 pt-4">
+            <a href="#" class="relative block font-semibold  hover:text-monu transition">
+              <span class="absolute -left-8 top-0 text-base">
+                <i class="far fa-address-card"></i>
+              </span>
+              Logout
+            </a>
+          </div>
+          <!-- singel link ends-->
+        </div>
+        <!-- profile links end-->
+      </div>
+      <!-- sidebar ends -->
+
+      <!-- profile info -->
+      <div class="col-span-9 grid grid-cols-3 gap-4">
+        <!-- single card -->
+        <div class="shadow-md bg-white px-4 py-8">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-semibold mb-4">Personal Information</h3>
+            <a href="#" class="text-monu hover:text-red-700">Edit</a>
+          </div>
+          <p class="font-medium pb-1">Russell Bing</p>
+          <p class="text-gray-800">russell@gmail.com</p>
+          <p class="text-gray-800">(123) 456-789</p>
+        </div>
+        <!-- single card -->
+        <div class="shadow-md bg-white px-4 py-6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-semibold mb-4">Shipping Address</h3>
+            <a href="#" class="text-monu hover:text-red-700">Edit</a>
+          </div>
+          <p class="font-medium pb-1">Russell Bing</p>
+          <p class="text-gray-800">132 Central Park, Newyork</p>
+          <p class="text-gray-800">(123) 456-789</p>
+        </div>
+        <!-- single card -->
+        <div class="shadow-md bg-white px-4 py-6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-semibold mb-4">Billing Address</h3>
+            <a href="#" class="text-monu hover:text-red-700">Edit</a>
+          </div>
+          <p class="font-medium pb-1">Russell Bing</p>
+          <p class="text-gray-800">132 Central Park, Newyork</p>
+          <p class="text-gray-800">(123) 456-789</p>
+        </div>
+      </div>
+      <!-- profile info ends -->
+    </div>
+    <!-- Account wrapper ends-->
+
+    <!-- footer -->
+    <footer class="bg-white pt-12 pb-12 border-t border-gray-200 grid grid-cols-2 gap-3">     
+      <div class="space-y-8 justify-self-end">
+        <img src="Image/logo.svg" class="w-30">
+        <p class="text-gray-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vitae reprehenderit repellat soluta, perferendis.
+        </p>
+      </div>
+      
+      <div class="flex space-x-6 justify-self-center">
+        <a href="#" class="text-gray-500">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-gray-500">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-gray-500">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-gray-500">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>   
+    </footer>
+    <!-- footer ends -->
+    <!-- Copyright -->
+    <div class="bg-gray-800 py-4">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">@RAFCART - ALL RIGHTS RESERVED</p>
+        <img src="Image/methods.png" class="h-5">
+      </div>
+    </div>
+    <!-- Copyright ends -->
+  </body>
+</html>

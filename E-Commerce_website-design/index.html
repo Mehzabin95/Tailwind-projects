@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAFCART</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="py-4 shadow-md bg-white">
+      <div class="container flex justify-between items-center">
+        <!-- logo -->
+        <a href="index.html">
+          <img src="Image/logo.svg" class="w-32" alt="" />
+        </a>
+        <!-- searchbar -->
+        <div class="flex w-full max-w-xl relative">
+          <span class="absolute left-4 top-3 text-lg text-gray-500">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full border border-monu border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            placeholder="search"
+          />
+          <button
+            class="bg-monu border border-monu text-white px-4 py-3 rounded-r-md hover:bg-white hover:text-monu"
+          >
+            Search
+          </button>
+        </div>
+        <!-- icon -->
+        <div class="flex items-center space-x-4">
+          <a
+            href="wishlist.html"
+            class="text-center text-gray-700 hover:text-monu transition relative"
+          >
+            <div class="text-2xl">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center bg-monu text-white text-xs"
+            >
+              8
+            </span>
+          </a>
+          <a
+            href="#"
+            class="text-center text-gray-700 hover:text-monu transition relative"
+          >
+            <div class="text-2xl">
+              <i class="far fa-shopping-bag"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center bg-monu text-white text-xs"
+            >
+              5
+            </span>
+          </a>
+          <a
+            href="accounts.html"
+            class="text-center text-gray-700 hover:text-monu transition"
+          >
+            <div class="text-2xl">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!--Nav-->
+    <nav class="w-full h-14 shadow-sm  bg-blue-950">
+    <div class="container  flex justify-between items-center">
+      <!-- All Categories -->
+      <div class="flex justify-start items-center">
+  
+        <div class="flex items-center justify-between mb-4">
+          <select class="w-44 text-sm text-gray-600 px-4 py-3 text-center font-medium shadow-md rounded focus:ring-monu focus:border-monu mt-1">
+            <option>Categories</option>
+            <option>Bedroom</option>
+            <option>Living</option>
+            <option>Dinning</option>
+            <option>Outdoor</option>
+            <option>Office</option>
+          </select>
+        </div> 
+
+         <a href="index.html" class="px-2 text-white hover:text-monu">Home</a>  
+         <a href="shop.html" class="px-2 text-white hover:text-monu">Shop</a> 
+         <a href="about.html" class="px-2 text-white hover:text-monu">About Us</a> 
+         <a href="contact.html" class="px-2 text-white hover:text-monu">Contact Us</a> 
+      </div>
+     
+         <a href="login.html" class="px-2 text-white hover:text-monu">Login/Register</a>       
+      
+    </div>
+    </nav>
+    <!-- nav ends -->    
+    <!-- Banner -->
+    <div class="bg-cover bg-no-repeat bg-center py-36 h-full" style="background-image: url(Image/banner-bg.jpg);">
+        <div class="container">
+          <h1 class="text-6xl text-blue-950 font-medium mb-4 capitalize font-hachi">
+            Best Collection For <br> Home Decoration
+          </h1>
+          <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint <br> nesciunt minima, 
+          in aliquam recusandae doloremque voluptatum delectus quibusdam.           
+          </p>
+          <button class="p-3 bg-monu border border-monu text-white rounded-md font-medium hover:bg-transparent hover:text-monu transition ">
+          Shop Now
+        </button>         
+        </div>
+    </div> 
+    <!-- banner ends -->
+    <!-- Cards -->
+    <div class="container py-16 mb-4">
+      <div class="w-10/12 grid grid-cols-3 gap-5 bg-white mx-auto justify-center">
+        <div class="border border-monu rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+          <img src="Image/icons/icons/delivery-van.svg" class=" object-cover" alt="">
+          <div>
+            <h4 class="font-medium text-lg">Free Shoping</h4>
+            <p class="text-gray-500 text-sm">Order Over $200</p>
+          </div>
+        </div>
+        <div class="border border-monu rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+          <img src="Image/icons/icons/money-back.svg" class=" object-cover" alt="">
+          <div>
+            <h4 class="font-medium text-lg">Money Returns</h4>
+            <p class="text-gray-500 text-sm">30 Days money return</p>
+          </div>
+        </div>
+        <div class="border border-monu rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+          <img src="Image/icons/icons/service-hours.svg" class=" object-cover" alt="">
+          <div>
+            <h4 class="font-medium text-lg">24/7 Support</h4>
+            <p class="text-gray-500 text-sm">Customer support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cards end -->
+    <!-- category -->
+    <div class="container pb-16">
+      <h1 class="font-semibold text-3xl text-blue-950 mb-4">SHOP BY CATEGORY</h1>
+      <div class="grid grid-cols-3 gap-3 bg-white">
+        <!-- single category -->
+        <div class="relative rounded-sm overflow-hidden">
+          <img src="Image/category/category/category-1.jpg" class="w-full" alt="caat1">
+          <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center 
+          text-xl text-white font-medium font-roboto hover:bg-opacity-60 hover:scale-125 transition">Bedroom</a>
+        </div>
+        <!-- single category ends-->
+        <!-- single category -->
+        <div class="relative rounded-sm overflow-hidden">
+          <img src="Image/category/category/category-5.jpg" class="w-full" alt="caat1">
+          <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center 
+          text-xl text-white font-medium font-roboto hover:bg-opacity-60 hover:scale-125 transition">Sofa</a>
+        </div>
+          <!-- single category ends-->
+        <!-- single category -->
+        <div class="relative rounded-sm overflow-hidden">
+          <img src="Image/category/category/category-3.jpg" class="w-full" alt="caat1">
+          <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center 
+          text-xl text-white font-medium font-roboto hover:bg-opacity-60 hover:scale-125 transition">Office</a>
+        </div>
+          <!-- single category ends-->
+        <!-- single category -->
+        <div class="relative rounded-sm overflow-hidden">
+          <img src="Image/category/category/category-4.jpg" class="w-full" alt="caat1">
+          <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center 
+          text-xl text-white font-medium font-roboto hover:bg-opacity-60 hover:scale-125 transition">Outdoor</a>
+        </div>
+          <!-- single category ends-->
+        <!-- single category -->
+        <div class="relative rounded-sm overflow-hidden">
+          <img src="Image/category/category/category-2.jpg" class="w-full" alt="caat1">
+          <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center 
+          text-xl text-white font-medium font-roboto hover:bg-opacity-60 hover:scale-125 transition">Mattress</a>
+        </div>
+          <!-- single category ends-->
+        <!-- single category -->
+        <div class="relative rounded-sm overflow-hidden">
+          <img src="Image/category/category/category-6.jpg" class="w-full" alt="caat1">
+          <a href="#" class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center t
+          ext-xl text-white font-medium font-roboto hover:bg-opacity-60 hover:scale-125 transition">Dinings</a>
+        </div>
+          <!-- single category ends-->
+      </div>
+    </div>
+    <!-- category ends -->
+    <!-- top new product wrapper -->
+    <div class="container pb-16">
+      <h1 class="font-semibold text-3xl text-blue-950 mb-4">TOP NEW ARRIVAL</h1>
+      <!-- product grid -->
+      <div class="grid grid-cols-4 gap-3">
+        <!-- Single Product -->
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- img -->
+          <div class="relative">
+          <img src="Image/products/products/product9.jpg" class="w-full">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="far fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="px-3 py-3">
+            <a href="">
+              <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Chair</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+              <p class="text-xl text-monu font-semibold">$45.00</p>
+              <p class="text-xl text-monu font-semibold line-through">$55.00</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+        </div>
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- img -->
+          <div class="relative">
+          <img src="Image/products/products/product3.jpg" class="w-full">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="far fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="px-3 py-3">
+            <a href="">
+              <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Mattress</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+              <p class="text-xl text-monu font-semibold">$120.00</p>
+              <p class="text-xl text-monu font-semibold line-through">$150.00</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+        </div>
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- img -->
+          <div class="relative">
+          <img src="Image/products/products/product5.jpg" class="w-full">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="far fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="px-3 py-3">
+            <a href="">
+              <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Dinning</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+              <p class="text-xl text-monu font-semibold">$160.00</p>
+              <p class="text-xl text-monu font-semibold line-through">$175.00</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+        </div>
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- img -->
+          <div class="relative">
+          <img src="Image/products/products/product6.jpg" class="w-full">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="far fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="px-3 py-3">
+            <a href="">
+              <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Chair</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+              <p class="text-xl text-monu font-semibold">$40.00</p>
+              <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+        </div>
+      </div>
+      <!-- product grid ends -->
+    </div>
+    <!-- top new product wrapper ends -->
+      <!-- ad section -->
+      <div class="container pb-16">
+        <a href="#">
+          <img src="Image/offer.jpg" class="w-full">
+        </a>
+      </div> 
+      <!-- ad section ends -->
+    <!-- recommanded product wrapper -->
+    <div class="container pb-16">
+    <h1 class="font-semibold text-3xl text-blue-950 mb-4">RECOMMANDED FOR YOU</h1>
+    <!-- product grid -->
+    <div class="grid grid-cols-4 gap-3">
+      <!-- Single Product -->
+      <div class="bg-white shadow-md rounded overflow-hidden group">
+        <!-- img -->
+        <div class="relative">
+        <img src="Image/products/products/product1.jpg" class="w-full">
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+            <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="far fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="px-3 py-3">
+          <a href="">
+            <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Sofa</h4>
+          </a>
+          <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+            <p class="text-xl text-monu font-semibold">$45.00</p>
+            <p class="text-xl text-monu font-semibold line-through">$55.00</p>
+          </div>
+          <div class="flex items-center">
+            <div class="flex gap-1 text-sm text-yellow-400">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+            </div>
+            <div class="text-xs text-gray-500 ml-3">(150)</div>
+          </div>
+        </div>
+        <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+      </div>
+      <!-- Single Product -->
+      <div class="bg-white shadow-md rounded overflow-hidden group">
+        <!-- img -->
+        <div class="relative">
+        <img src="Image/products/products/product2.jpg" class="w-full">
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+            <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="far fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="px-3 py-3">
+          <a href="">
+            <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Sofa</h4>
+          </a>
+          <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+            <p class="text-xl text-monu font-semibold">$120.00</p>
+            <p class="text-xl text-monu font-semibold line-through">$150.00</p>
+          </div>
+          <div class="flex items-center">
+            <div class="flex gap-1 text-sm text-yellow-400">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+            </div>
+            <div class="text-xs text-gray-500 ml-3">(150)</div>
+          </div>
+        </div>
+        <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+      </div>
+      <!-- Single Product -->
+      <div class="bg-white shadow-md rounded overflow-hidden group">
+        <!-- img -->
+        <div class="relative">
+        <img src="Image/products/products/product3.jpg" class="w-full">
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+            <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="far fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="px-3 py-3">
+          <a href="">
+            <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Matress</h4>
+          </a>
+          <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+            <p class="text-xl text-monu font-semibold">$160.00</p>
+            <p class="text-xl text-monu font-semibold line-through">$175.00</p>
+          </div>
+          <div class="flex items-center">
+            <div class="flex gap-1 text-sm text-yellow-400">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+            </div>
+            <div class="text-xs text-gray-500 ml-3">(150)</div>
+          </div>
+        </div>
+        <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+      </div>
+      <!-- Single Product -->
+      <div class="bg-white shadow-md rounded overflow-hidden group">
+        <!-- img -->
+        <div class="relative">
+        <img src="Image/products/products/product4.jpg" class="w-full">
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+            <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+              <i class="far fa-heart"></i>
+            </a>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="px-3 py-3">
+          <a href="">
+            <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Bed</h4>
+          </a>
+          <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+            <p class="text-xl text-monu font-semibold">$40.00</p>
+            <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+          </div>
+          <div class="flex items-center">
+            <div class="flex gap-1 text-sm text-yellow-400">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              
+            </div>
+            <div class="text-xs text-gray-500 ml-3">(150)</div>
+          </div>
+        </div>
+        <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+      </div>
+      <!-- Single Product -->
+      <div class="bg-white shadow-md rounded overflow-hidden group">
+      <!-- img -->
+      <div class="relative">
+      <img src="Image/products/products/product5.jpg" class="w-full">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="px-3 py-3">
+        <a href="">
+          <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Chair</h4>
+        </a>
+        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+          <p class="text-xl text-monu font-semibold">$40.00</p>
+          <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+        </div>
+        <div class="flex items-center">
+          <div class="flex gap-1 text-sm text-yellow-400">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            
+          </div>
+          <div class="text-xs text-gray-500 ml-3">(150)</div>
+        </div>
+      </div>
+      <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+      </div>
+      <!-- Single Product -->
+      <div class="bg-white shadow-md rounded overflow-hidden group">
+      <!-- img -->
+      <div class="relative">
+      <img src="Image/products/products/product6.jpg" class="w-full">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="px-3 py-3">
+        <a href="">
+          <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Chair</h4>
+        </a>
+        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+          <p class="text-xl text-monu font-semibold">$40.00</p>
+          <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+        </div>
+        <div class="flex items-center">
+          <div class="flex gap-1 text-sm text-yellow-400">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            
+          </div>
+          <div class="text-xs text-gray-500 ml-3">(150)</div>
+        </div>
+      </div>
+      <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+      </div>
+    <!-- Single Product -->
+    <div class="bg-white shadow-md rounded overflow-hidden group">
+    <!-- img -->
+    <div class="relative">
+    <img src="Image/products/products/product7.jpg" class="w-full">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+          <i class="fas fa-search"></i>
+        </a>
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+          <i class="far fa-heart"></i>
+        </a>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="px-3 py-3">
+      <a href="">
+        <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Divan</h4>
+      </a>
+      <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+        <p class="text-xl text-monu font-semibold">$40.00</p>
+        <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+      </div>
+      <div class="flex items-center">
+        <div class="flex gap-1 text-sm text-yellow-400">
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          
+        </div>
+        <div class="text-xs text-gray-500 ml-3">(150)</div>
+      </div>
+    </div>
+    <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+    </div>
+    <!-- Single Product -->
+    <div class="bg-white shadow-md rounded overflow-hidden group">
+      <!-- img -->
+      <div class="relative">
+      <img src="Image/products/products/product8.jpg" class="w-full">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="px-3 py-3">
+        <a href="">
+          <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Chair</h4>
+        </a>
+        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+          <p class="text-xl text-monu font-semibold">$40.00</p>
+          <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+        </div>
+        <div class="flex items-center">
+          <div class="flex gap-1 text-sm text-yellow-400">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            
+          </div>
+          <div class="text-xs text-gray-500 ml-3">(150)</div>
+        </div>
+      </div>
+      <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+    </div>
+    <!-- Single Product -->
+    <div class="bg-white shadow-md rounded overflow-hidden group">
+    <!-- img -->
+    <div class="relative">
+    <img src="Image/products/products/product9.jpg" class="w-full">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+          <i class="fas fa-search"></i>
+        </a>
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+          <i class="far fa-heart"></i>
+        </a>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="px-3 py-3">
+      <a href="">
+        <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Chair</h4>
+      </a>
+      <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+        <p class="text-xl text-monu font-semibold">$40.00</p>
+        <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+      </div>
+      <div class="flex items-center">
+        <div class="flex gap-1 text-sm text-yellow-400">
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          
+        </div>
+        <div class="text-xs text-gray-500 ml-3">(150)</div>
+      </div>
+    </div>
+    <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+    </div>
+    <!-- Single Product -->
+    <div class="bg-white shadow-md rounded overflow-hidden group">
+      <!-- img -->
+      <div class="relative">
+      <img src="Image/products/products/product10.jpg" class="w-full">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="px-3 py-3">
+        <a href="">
+          <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Chair</h4>
+        </a>
+        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+          <p class="text-xl text-monu font-semibold">$40.00</p>
+          <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+        </div>
+        <div class="flex items-center">
+          <div class="flex gap-1 text-sm text-yellow-400">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            
+          </div>
+          <div class="text-xs text-gray-500 ml-3">(150)</div>
+        </div>
+      </div>
+      <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+    </div>
+    <!-- Single Product -->
+    <div class="bg-white shadow-md rounded overflow-hidden group">
+    <!-- img -->
+    <div class="relative">
+    <img src="Image/products/products/product11.jpg" class="w-full">
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+          <i class="fas fa-search"></i>
+        </a>
+        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+          <i class="far fa-heart"></i>
+        </a>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="px-3 py-3">
+      <a href="">
+        <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Bed</h4>
+      </a>
+      <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+        <p class="text-xl text-monu font-semibold">$40.00</p>
+        <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+      </div>
+      <div class="flex items-center">
+        <div class="flex gap-1 text-sm text-yellow-400">
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          
+        </div>
+        <div class="text-xs text-gray-500 ml-3">(150)</div>
+      </div>
+    </div>
+    <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+    </div>
+    <!-- Single Product -->
+    <div class="bg-white shadow-md rounded overflow-hidden group">
+      <!-- img -->
+      <div class="relative">
+      <img src="Image/products/products/product12.jpg" class="w-full">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="px-3 py-3">
+        <a href="">
+          <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Table</h4>
+        </a>
+        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+          <p class="text-xl text-monu font-semibold">$40.00</p>
+          <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+        </div>
+        <div class="flex items-center">
+          <div class="flex gap-1 text-sm text-yellow-400">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            
+          </div>
+          <div class="text-xs text-gray-500 ml-3">(150)</div>
+        </div>
+      </div>
+      <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+    </div>
+
+    </div>
+    <!-- product grid ends -->
+    </div>
+    <!-- recommanded product wrapper ends -->
+    <!-- footer -->
+    <footer class="bg-white pt-12 pb-12 border-t border-gray-200 grid grid-cols-2 gap-3">
+      
+        <div class="space-y-8 justify-self-end">
+          <img src="Image/logo.svg" class="w-30">
+          <p class="text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vitae reprehenderit repellat soluta, perferendis.
+          </p>
+        </div>
+        
+          <div class="flex space-x-6 justify-self-center">
+            <a href="#" class="text-gray-500">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-500">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-500">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-500">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        
+
+    </footer>
+    <!-- Copyright -->
+    <div class="bg-gray-800 py-4">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">@RAFCART - ALL RIGHTS RESERVED</p>
+        <img src="Image/methods.png" class="h-5">
+      </div>
+    </div>
+    <!-- COpyright Ends -->
+  </body>
+</html>

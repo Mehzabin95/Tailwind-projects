@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAFCART</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="py-4 shadow-md bg-white">
+      <div class="container flex justify-between items-center">
+        <!-- logo -->
+        <a href="index.html">
+          <img src="Image/logo.svg" class="w-32" alt="" />
+        </a>
+        <!-- searchbar -->
+        <div class="flex w-full max-w-xl relative">
+          <span class="absolute left-4 top-3 text-lg text-gray-500">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full border border-monu border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            placeholder="search"
+          />
+          <button
+            class="bg-monu border border-monu text-white px-4 py-3 rounded-r-md hover:bg-white hover:text-monu"
+          >
+            Search
+          </button>
+        </div>
+        <!-- icon -->
+        <div class="flex items-center space-x-4">
+          <a
+            href="#"
+            class="text-center text-gray-700 hover:text-monu transition relative"
+          >
+            <div class="text-2xl">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center bg-monu text-white text-xs"
+            >
+              8
+            </span>
+          </a>
+          <a
+            href="#"
+            class="text-center text-gray-700 hover:text-monu transition relative"
+          >
+            <div class="text-2xl">
+              <i class="far fa-shopping-bag"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center bg-monu text-white text-xs"
+            >
+              5
+            </span>
+          </a>
+          <a
+            href="accounts.html"
+            class="text-center text-gray-700 hover:text-monu transition"
+          >
+            <div class="text-2xl">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- nav -->
+    <nav class="w-full h-14 shadow-sm  bg-blue-950">
+      <div class="container  flex justify-between items-center">
+        <!-- All Categories -->
+        <div class="flex justify-start items-center">
+    
+          <div class="flex items-center justify-between mb-4">
+            <select class="w-44 text-sm text-gray-600 px-4 py-3 text-center font-medium shadow-md rounded focus:ring-monu focus:border-monu mt-1">
+              <option>Categories</option>
+              <option>Bedroom</option>
+              <option>Living</option>
+              <option>Dinning</option>
+              <option>Outdoor</option>
+              <option>Office</option>
+            </select>
+          </div> 
+  
+           <a href="index.html" class="px-2 text-white hover:text-monu">Home</a>  
+           <a href="shop.html" class="px-2 text-white hover:text-monu">Shop</a> 
+           <a href="about.html" class="px-2 text-white hover:text-monu">About Us</a> 
+           <a href="contact.html" class="px-2 text-white hover:text-monu">Contact Us</a> 
+        </div>
+       
+           <a href="login.html" class="px-2 text-white hover:text-monu">Login/Register</a>       
+        
+      </div>
+      </nav>
+    <!-- nav -->
+    <!-- Breadcrum starts -->
+    <div class="container py-4 flex items-center gap-3">
+    <a href="index.html" class="text-monu text-base">
+      <i class="fas fa-home"></i>
+    </a>
+    <span class="text-sm text-gray-400">
+      <i class="fas fa-chevron-right"></i>
+    </span>
+    <p class="text-gray-600 font-medium"> Product View </p>
+    </div>
+    <!-- Breadcrum ends -->
+
+    <!-- Product view section -->
+    <div class="container grid grid-cols-2 gap-6">
+      <!-- Product image -->
+      <div>
+        <img src="Image/products/products/product9.jpg" class="w-full">
+        <div class="grid grid-cols-5 gap-4 mt-4">
+          <img src="Image/products/products/product9.jpg" class="w-full cursor-pointer border border-monu">
+          <img src="Image/products/products/product1.jpg" class="w-full cursor-pointer border">
+          <img src="Image/products/products/product8.jpg" class="w-full cursor-pointer border">
+          <img src="Image/products/products/product12.jpg" class="w-full cursor-pointer border">
+          <img src="Image/products/products/product11.jpg" class="w-full cursor-pointer border">
+        </div>
+      </div>
+      <!-- Product image ends -->
+
+      <!-- Product content -->
+      <div>
+        <h2 class="text-3xl font-medium mb-2">Italian L Shape Sofa</h2>
+        <div class="flex items-center mb-4">
+          <div class="flex gap-1 text-sm text-yellow-400">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+          </div>
+          <div class="text-xs text-gray-500 ml-3">(150 Reviews)</div>
+        </div>
+        
+        <div class="space-y-2 mb-1">
+          <p class="text-gray-600 font-semibold space-x-2">
+            <span>Availability:</span>
+            <span class="text-green-600">In Stock</span>
+          </p>
+          <p class="text-gray-600 font-semibold space-x-2">
+            <span>Brand:</span>
+            <span class="font-medium">Apex</span>
+          </p>
+          <p class="text-gray-600 font-semibold space-x-2">
+            <span>Category:</span>
+            <span class="font-medium">Sofa</span>
+          </p>
+          <p class="text-gray-600 font-semibold space-x-2">
+            <span>SKU:</span>
+            <span class="font-medium">BE45VGRT</span>
+          </p>
+        </div>
+
+        <div class="flex items-baseline mb-1 space-x-2">
+          <p class="text-xl text-monu font-semibold">$450.00</p>
+          <p class="text-base text-gray-600 line-through">$550.00</p>
+        </div>
+        <P class="mt-4 text-gray-600">
+          Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit cumque buhiyw ncjxhh tgsedr.
+        </P>
+        <!-- Size -->
+        <div class="pt-4">
+          <p class="text-sm text-gray-800 uppercase font-medium">Size</p>
+          <div class=" flex items-center gap-3"> 
+            <!-- Single size -->
+            <div class="size-selector">
+              <input type="radio" name="size" id="size-xs" class="hidden">
+              <label for="size-xs" class="text-xs border border-x-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">
+                  XS
+              </label>
+            </div>
+            <!-- Single size ends -->
+              <!-- Single size -->
+              <div class="size-selector">
+                <input type="radio" name="size" id="size-s" class="hidden">
+                <label for="size-s" class="text-xs border border-x-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">
+                    S
+                </label>
+              </div>
+              <!-- Single size ends -->
+                <!-- Single size -->
+            <div class="size-selector">
+              <input type="radio" name="size" id="size-m" class="hidden">
+              <label for="size-m" class="text-xs border border-x-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">
+                  M
+              </label>
+            </div>
+            <!-- Single size ends -->
+              <!-- Single size -->
+              <div class="size-selector">
+                <input type="radio" name="size" id="size-l" class="hidden">
+                <label for="size-l" class="text-xs border border-x-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">
+                    L
+                </label>
+              </div>
+              <!-- Single size ends -->
+                <!-- Single size -->
+            <div class="size-selector">
+              <input type="radio" name="size" id="size-xl" class="hidden">
+              <label for="size-xl" class="text-xs border border-x-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow text-gray-600">
+                  XL
+              </label>
+            </div>
+            <!-- Single size ends -->
+          </div>
+        </div>
+        <!-- Size ends -->
+        <!-- colors -->
+        <div class="pt-4">
+          <p class="text-sm text-gray-800 uppercase font-medium">Color</p>
+          <div class=" flex items-center gap-3"> 
+            <!-- Single color -->
+            <div class="color-selector">
+              <input type="radio" name="size" id="red" class="hidden">
+              <label for="red" class="text-xs border border-x-red-600 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow block" style="background-color: red;">      
+              </label>
+            </div>
+            <!-- Single color ends -->
+              <!-- Single color -->
+              <div class="color-selector">
+                <input type="radio" name="size" id="white" class="hidden">
+                <label for="white" class="text-xs border border-x-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow block" style="background-color: white;">                    
+                </label>
+              </div>
+              <!-- Single color ends -->
+                  <!-- Single color -->
+                  <div class="color-selector">
+                  <input type="radio" name="size" id="black" class="hidden">
+                  <label for="black" class="text-xs border border-x-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow block" style="background-color: black;">                   
+                  </label>
+                </div>
+                <!-- Single color ends -->
+          </div>
+          </div>
+          <!-- colors end -->
+            <!-- quantity -->
+          <div class="mt-4">
+            <h3 class="text-sm text-gray-800 mb-1">Quantity</h3>
+            <div class="flex items-center border border-gray-300 text-gray-600 divide-x divide-gray-300 w-max">
+              <div class="h-8 w-8 flex items-center justify-center text-xl cursor-pointer select-none">
+                -
+              </div>
+              <div class="h-8 w-8 flex items-center justify-center text-base">
+                4
+              </div>
+              <div class="h-8 w-8 flex items-center justify-center text-xl cursor-pointer select-none"">
+                +
+              </div>
+            </div>
+          </div>
+          <!-- quantity ends -->
+
+          <!-- Cart button  -->
+          <div class="flex gap-3 border-b border-gray-300 pb-5 mt-6">
+            <a href="#" class="bg-monu border border-monu text-white px-8 py-2 font-medium rounded flex items-center gap-2 hover:bg-transparent hover:text-monu transition">
+              <i class="fas fa-shopping-bag"></i> Add to cart
+            </a>
+            <a href="#" class="border border-gray-500 text-gray-600 px-8 py-2 font-medium rounded flex items-center gap-2 hover:bg-transparent hover:text-monu transition">
+              <i class="fas fa-heart"></i> Add to wishlist
+            </a>
+          </div>
+          <!-- cart button ends -->
+      </div>
+      <!-- Product content ends -->
+      <!-- Product description -->
+      <div class="container pb-16">
+        <h3 class="border-b border-gray-200 font-roboto text-gray-800 pb-3 font-medium">Product Details</h3>
+        <div class=" pt-6">
+          <div class="text-gray-600 space-y-3">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ipsa distinctio ab. 
+            Alias ea numquam natus eligendi laboriosam ab reiciendis sed omnis? 
+            Molestias dolorem exercitationem rem libero dignissimos asperiores aliquid.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ipsa distinctio ab. 
+            Alias ea numquam natus eligendi laboriosam ab reiciendis sed omnis? 
+            Molestias dolorem exercitationem rem libero dignissimos asperiores aliquid.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ipsa distinctio ab. 
+            Alias ea numquam natus eligendi laboriosam ab reiciendis sed omnis? 
+            Molestias dolorem exercitationem rem libero dignissimos asperiores aliquid.
+          </p>
+          </div>
+          <!-- table -->
+          <table class="table-auto border-collapse w-full text-left text-gray-600 text-sm mt-6">
+            <tr>
+              <th class="py-2 px-4 border border-gray-300 w-40 font-medium">Color</th>
+              <td class="py-2 px-4 border border-gray-300 w-40 ">Black, Brown, Red</td>
+            </tr>
+            <tr>
+              <th class="py-2 px-4 border border-gray-300 w-40 font-medium">Material</th>
+              <td class="py-2 px-4 border border-gray-300 w-40 ">Leather</td>
+            </tr>
+            <tr>
+              <th class="py-2 px-4 border border-gray-300 w-40 font-medium">Weight</th>
+              <td class="py-2 px-4 border border-gray-300 w-40 ">55kg</td>
+            </tr>
+          </table>
+          <!-- table ends -->
+        </div>
+        
+      </div>
+      <!-- Product description ends-->
+    </div>
+    <!-- Product view section ends -->
+
+    <!-- Related product -->
+    <div class="container pb-16">
+      <h1 class="font-semibold text-3xl text-blue-950 mb-4">Related Products</h1>
+      <!-- product grid -->
+      <div class="grid grid-cols-4 gap-3">
+        <!-- Single Product -->
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- img -->
+          <div class="relative">
+          <img src="Image/products/products/product9.jpg" class="w-full">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="far fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="px-3 py-3">
+            <a href="">
+              <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Chair</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+              <p class="text-xl text-monu font-semibold">$45.00</p>
+              <p class="text-xl text-monu font-semibold line-through">$55.00</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+        </div>
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- img -->
+          <div class="relative">
+          <img src="Image/products/products/product3.jpg" class="w-full">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="far fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="px-3 py-3">
+            <a href="">
+              <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Mattress</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+              <p class="text-xl text-monu font-semibold">$120.00</p>
+              <p class="text-xl text-monu font-semibold line-through">$150.00</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+        </div>
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- img -->
+          <div class="relative">
+          <img src="Image/products/products/product5.jpg" class="w-full">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="far fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="px-3 py-3">
+            <a href="">
+              <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Dinning</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+              <p class="text-xl text-monu font-semibold">$160.00</p>
+              <p class="text-xl text-monu font-semibold line-through">$175.00</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+        </div>
+        <div class="bg-white shadow-md rounded overflow-hidden group">
+          <!-- img -->
+          <div class="relative">
+          <img src="Image/products/products/product6.jpg" class="w-full">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-monu flex items-center justify-center hover:bg-gray-800 transition">
+                <i class="far fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="px-3 py-3">
+            <a href="">
+              <h4 class="font-medium text-xl mb-2 text-gray-800 hover:text-monu transition">Guyer Chair</h4>
+            </a>
+            <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+              <p class="text-xl text-monu font-semibold">$40.00</p>
+              <p class="text-xl text-monu font-semibold line-through">$50.00</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex gap-1 text-sm text-yellow-400">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                
+              </div>
+              <div class="text-xs text-gray-500 ml-3">(150)</div>
+            </div>
+          </div>
+          <button class="w-full bg-monu text-white text-center py-1 border border-monu rounded-b hover:bg-transparent hover:text-monu transition">Add to Cart</button>
+        </div>
+      </div>
+      <!-- product grid ends -->
+    </div>
+    <!-- related product ends -->
+
+    <!-- footer -->
+    <footer class="bg-white pt-12 pb-12 border-t border-gray-200 grid grid-cols-2 gap-3">
+      
+      <div class="space-y-8 justify-self-end">
+        <img src="Image/logo.svg" class="w-30">
+        <p class="text-gray-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vitae reprehenderit repellat soluta, perferendis.
+        </p>
+      </div>
+      
+        <div class="flex space-x-6 justify-self-center">
+          <a href="#" class="text-gray-500">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-500">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-gray-500">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-500">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      
+
+    </footer>
+    <!-- footer ends -->
+
+    <!-- Copyright -->
+    <div class="bg-gray-800 py-4">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">@RAFCART - ALL RIGHTS RESERVED</p>
+        <img src="Image/methods.png" class="h-5">
+      </div>
+    </div>
+    <!-- Copyright ends -->
+  </body>
+</html>

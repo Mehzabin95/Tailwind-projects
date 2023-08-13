@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAFCART</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="py-4 shadow-md bg-white">
+      <div class="container flex justify-between items-center">
+        <!-- logo -->
+        <a href="index.html">
+          <img src="Image/logo.svg" class="w-32" alt="" />
+        </a>
+        <!-- searchbar -->
+        <div class="flex w-full max-w-xl relative">
+          <span class="absolute left-4 top-3 text-lg text-gray-500">
+            <i class="fas fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full border border-monu border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            placeholder="search"
+          />
+          <button
+            class="bg-monu border border-monu text-white px-4 py-3 rounded-r-md hover:bg-white hover:text-monu"
+          >
+            Search
+          </button>
+        </div>
+        <!-- icon -->
+        <div class="flex items-center space-x-4">
+          <a
+            href="#"
+            class="text-center text-gray-700 hover:text-monu transition relative"
+          >
+            <div class="text-2xl">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center bg-monu text-white text-xs"
+            >
+              8
+            </span>
+          </a>
+          <a
+            href="#"
+            class="text-center text-gray-700 hover:text-monu transition relative"
+          >
+            <div class="text-2xl">
+              <i class="far fa-shopping-bag"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="absolute -right-2 -top-1 w-5 h-5 rounded-full flex items-center bg-monu text-white text-xs"
+            >
+              5
+            </span>
+          </a>
+          <a
+            href="accounts.html"
+            class="text-center text-gray-700 hover:text-monu transition"
+          >
+            <div class="text-2xl">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!--Nav-->
+    <nav class="w-full h-14 shadow-sm  bg-blue-950">
+      <div class="container  flex justify-between items-center">
+        <!-- All Categories -->
+        <div class="flex justify-start items-center">
+    
+          <div class="flex items-center justify-between mb-4">
+            <select class="w-44 text-sm text-gray-600 px-4 py-3 text-center font-medium shadow-md rounded focus:ring-monu focus:border-monu mt-1">
+              <option>Categories</option>
+              <option>Bedroom</option>
+              <option>Living</option>
+              <option>Dinning</option>
+              <option>Outdoor</option>
+              <option>Office</option>
+            </select>
+          </div> 
+  
+           <a href="index.html" class="px-2 text-white hover:text-monu">Home</a>  
+           <a href="shop.html" class="px-2 text-white hover:text-monu">Shop</a> 
+           <a href="about.html" class="px-2 text-white hover:text-monu">About Us</a> 
+           <a href="contact.html" class="px-2 text-white hover:text-monu">Contact Us</a> 
+        </div>
+       
+           <a href="login.html" class="px-2 text-white hover:text-monu">Login/Register</a>       
+        
+      </div>
+    </nav>
+    <!-- nav ends -->    
+
+    <!-- Login -->
+    <div class="container py-16">
+      <div class="max-w-lg mx-auto shadow-md px-6 py-7 rounded overflow-hidden">
+        <h2 class="text-2xl font-medium mb-1">Login</h2>
+        <p class="text-gray-600 mb-6 text-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <form action="">
+         <div class="space-y-4">
+          <div>
+            <label for="email" class="text-gray-600 mb-2 block">Email Address</label>
+            <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-monu" placeholder="Enter your email address"> 
+          </div>
+          <div>
+            <label for="password" class="text-gray-600 mb-2 block">Password</label>
+            <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-monu" placeholder="Enter your password"> 
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <input type="checkbox" id="agreement" class="text-monu focus:ring-0 rounded-sm cursor-pointer">
+              <label for="agreement" class="text-gray-600 cursor-pointer">Remember Me</label>
+            </div>            
+            <a href="#" class="text-monu text-sm">Forget Password?</a>
+          </div>
+          <div class="mt-4">
+            <button class="w-full p-3 bg-monu border border-monu text-white rounded-md font-medium hover:bg-transparent hover:text-monu transition ">
+              LOGIN
+            </button> 
+          </div>
+         </div>
+        </form>
+        <!-- form ends -->
+
+        <!-- login with -->
+        <div class="mt-6 flex justify-center relative">
+          <div class="text-gray-600 px-3 bg-white z-10 relative">OR LOGIN WITH</div>
+          <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
+        </div>
+        <!-- login with ends -->
+
+        <div class="flex items-center justify-center gap-3">
+          <div class="mt-4 w-full">
+            <button class="w-full p-3 bg-blue-700 border border-blue-400 text-white rounded-md font-medium hover:bg-transparent hover:text-blue-700 transition ">
+              Facebook
+            </button> 
+          </div>
+          <div class="mt-4 w-full">
+            <button class="w-full p-3 bg-orange-500 border border-orange-500 text-white rounded-md font-medium hover:bg-transparent hover:text-orange-600 transition ">
+              Google
+            </button> 
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-2 mt-4">
+          <p class="text-gray-600 text-base">Don't have an acount?</p>
+          <a href="register.html" class="text-monu text-base">Register Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Login ends -->
+
+    <!-- footer -->
+    <footer class="bg-white pt-12 pb-12 border-t border-gray-200 grid grid-cols-2 gap-3">
+  
+      <div class="space-y-8 justify-self-end">
+        <img src="Image/logo.svg" class="w-30">
+        <p class="text-gray-400">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vitae reprehenderit repellat soluta, perferendis.
+        </p>
+      </div>
+      
+        <div class="flex space-x-6 justify-self-center">
+          <a href="#" class="text-gray-500">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-500">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-gray-500">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-500">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      
+
+    </footer>
+
+    <!-- Copyright -->
+    <div class="bg-gray-800 py-4">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">@RAFCART - ALL RIGHTS RESERVED</p>
+        <img src="Image/methods.png" class="h-5">
+      </div>
+    </div>
+    <!-- COpyright Ends -->
+  </body>
+</html>
